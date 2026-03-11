@@ -1,8 +1,11 @@
 import time
+import json
 from DrissionPage import ChromiumOptions, ChromiumPage
 
 co = ChromiumOptions()
-co.set_paths(user_data_path=r'c:/AAA_DrissionPage2')
+# phone = 15259712061
+phone = 18750573105
+co.set_paths(user_data_path=f'c:/AAA_dp_{phone}')
 page = ChromiumPage(co)
 
 # 设置监听目标
@@ -15,12 +18,12 @@ page.get('https://mobile.yangkeduo.com/search_result.html?search_type=goods&sear
 print(page.title)
 
 data_raw = []
-max_packets = 5  # 设置最多获取的数据包数量
+max_packets = 10  # 设置最多获取的数据包数量
 packet_count = 0
 
 # 滚动并实时捕获数据包
-for ele in range(10):
-    time.sleep(1)
+for ele in range(999999):
+    time.sleep(10)
     print("滚动---:", ele)
     page.run_js('window.scrollBy(0, window.innerHeight)')
 
@@ -40,6 +43,7 @@ for ele in range(10):
                 break
         except Exception as e:
             print(f"解析数据包出错: {e}")
+            break
 
 # 停止监听
 page.listen.stop()
@@ -63,5 +67,9 @@ import pandas as pd
 
 df = pd.DataFrame(data_info)
 df.to_excel('data1.xlsx', index=False)
+
+json_str = json.dumps(data_info, ensure_ascii=False, indent=4)
+with open("product_details.json", 'w', encoding='utf-8') as f:
+    f.write(json_str)
 print(f"数据写入execl表格1")
 page.quit()

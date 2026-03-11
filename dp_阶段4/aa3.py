@@ -8,7 +8,7 @@ project_time1 = time.time()
 
 # co = ChromiumOptions().headless()
 co = ChromiumOptions()
-co.set_paths(user_data_path=r'c:/AAA_DrissionPage4')
+co.set_paths(user_data_path=r'c:/AAA_DrissionPage5')
 # co.headless(True)  # 开启无头模式
 co.set_argument('--disable-gpu')  # 可选，兼容部分系统的GPU渲染问题
 page = ChromiumPage(co)
@@ -58,7 +58,7 @@ def page_running():
 product_history = []
 
 # 翻页
-for i, ele in enumerate(range(2)):
+for i, ele in enumerate(range(50)):
     print(f"页数-{i + 1}")
     if i + 1 != 1: page.run_js('window.scrollBy(0, window.innerHeight)')
     product_list = []
