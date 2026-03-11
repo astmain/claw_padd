@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- <html lang="en" style="font-size: 0.2rem;background: transparent;"> -->
+<html lang="en" style="background: transparent;">
+<!-- <html lang="en" style="font: 0.2rem;opacity: 0.3;"> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="autox://sdk.v1.js"></script>
+  <script class="vue" src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <link href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" type="text/css" rel="stylesheet">
+  <script class="jq" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js"></script>
+</head>
+
+<!-- <body style="font: 0.2rem;background: rgba(0,0,0,0.1);"> -->
+<!-- <body style="font: 0.2rem;opacity: 0.3;"> -->
+
+<!-- <body style="font-size: 0.2rem;background: transparent;"> -->
+
+<body style="background: transparent;">
+  <nav id="root">
+
+    <h1>网页</h1>
+    <el-button type="primary" size="mini" @click="方法1_()">方法1_</el-button>
+    <!-- <el-input v-model="src1"></el-input> -->
+    <input v-model="src1"></input>
+    <van-button type="primary">按钮</van-button>
+
+    <van-cell-group>
+      <van-field v-model="src1" placeholder="提示性文字" />
+      <van-field v-model="src1" label="标题" placeholder="提示性文字" />
+    </van-cell-group>
+
+    <!-- <van-password-input :value="value" info="密码为 6 位数字" :focused="showKeyboard" @focus="showKeyboard = true" /> -->
+
+    <!-- <van-number-keyboard :show="showKeyboard" @input="onInput" @delete="onDelete" @blur="showKeyboard = false" /> -->
+    <van-search v-model="value" :show-action="showAction" placeholder="请输入搜索关键词" @search="onSearch" @cancel="onCancel"
+      @focus="onFocus" />
+  </nav>
+  <script>
+    window.Message = window.ELEMENT.Message
+    let jq = $;
+    jq(() => {
+      console.log(`${1}>name=======:`, 3)
+    })//
+    function addText(text) {
+      const div = document.createElement("div");
+      div.innerHTML = text;
+      document.body.appendChild(div);
+    }
+
+
+
+    async function aaa() {
+      return new Promise((reslove, reject) => {
+        $autox.callHandler("test", "web调用数据111", (data) => {
+          console.log(data)
+          reslove(data)
+        });
+      })
+
+    }
+
+
+
+
+
+
+
+
+    let app = {
+      el: " #root ",
+      data: {
+        src1: "111111111111",
+        value: '123',
+        showKeyboard: false,
+        showAction: false
+      },
+      methods: {
+        onSearch() {
+          this.$toast(this.value);
+        },
+        onFocus() {
+          this.showAction = true;
+        },
+        onCancel() {
+          this.showAction = false;
+        },
+        onInput(key) {
+          this.value = (this.value + key).slice(0, 6);
+        },
+        onDelete() {
+          this.value = this.value.slice(0, this.value.length - 1);
+        },
+        async 方法1_() {
+          console.log(`${1}>方法1_ =======:`, 111)
+          // alert(111)
+          this.src1 = "222222222222"
+          // $autox.callHandler("test", "web调用数据111", (data) => {
+          //   console.log(data)
+          // });
+
+          // Message.success({ message: `成功:111`, duration: 3 * 1000, showClose: true, })
+          // let res = await aaa()
+          // console.log(`${1}>res=======:`, res)
+          // this.src1 = "res"
+
+          let aaa = `( ()=> {
+            log("666")
+            log("点击-home:" + home()); sleep(2000)
+            log("点击-抖音:" + click("抖音")); sleep(1000)
+            log("点击-首页:" + click("首页")); sleep(1000)
+            log("777")
+            return "777"
+          })()`
+
+
+
+
+          function script_dou_yin() {
+            // let tool = require("tool.js")
+            // tool.store.arr_init("arr_douyin", [])
+            let params = { num: 5, }
+            log("点击-home:" + home()); sleep(1000)
+            log("点击-抖音:" + click("抖音")); sleep(1000)
+            log("点击-首页:" + click("首页")); sleep(1000)
+
+            for (let index = 0; index < params.num; index++) {
+              let ele = className("android.widget.LinearLayout").descContains("未点赞，").findOne(1000 * 5);
+              if (ele.desc().includes("未点赞")) {
+                // ele.click();
+                // ele.click();
+                click(device.width / 2, 500);
+                sleep(1000 * 0.1);
+                click(device.width / 2, 500);
+                // click(ele.bounds().centerX(), ele.bounds().centerY())
+                sleep(1000 * 2);
+                swipe(device.width / 2, 1800, device.width / 2, 300, 1000 * 0.5);
+                let item = { index: index + 1, isok: 1, msg: `滑动了: ${index + 1}`, desc: ele.desc() };
+                log(item);
+                click(device.width / 2, 500);
+                sleep(1000 * 0.1);
+                click(device.width / 2, 500);
+                // events.broadcast.emit("script_dou_yin", "小明");
+                // tool.store.arr_push("arr_douyin", item); sleep(1000 * 2)
+              } else {
+                click(device.width / 2, 500);
+                sleep(1000 * 0.1);
+                click(device.width / 2, 500);
+                log("无效滑动")
+                sleep(1000 * 2);
+                swipe(device.width / 2, 1800, device.width / 2, 300, 1000 * 0.5);
+                sleep(1000 * 2);
+              }
+              sleep(1000 * 2)
+
+
+              // window.msg_info.getText("msg_info" + index)
+
+
+
+            }
+            toastLog('运行结束')
+
+          }
+
+
+
+          let ccc = `(${script_dou_yin})()`
+
+
+
+
+
+
+          $autox.callHandler("test", ccc.toString(), (data) => {
+            Message.success({ message: `成功:${data}`, duration: 2 * 1000, showClose: true, })
+            this.src1 = data
+            addText("安卓回调, data:" + data);
+          })
+
+
+
+        }, //
+
+
+
+      }, //////
+      async mounted() {
+
+      },
+    }
+
+
+    new Vue(app)
+
+
+    const ua = navigator.userAgent
+    let isShow = false
+    if (/(?:Android)/.test(ua)) {
+      const innerHeight = window.innerHeight;
+      window.addEventListener('resize', () => {
+        const newInnerHeight = window.innerHeight;
+        isShow = innerHeight > newInnerHeight;
+      });
+    } else if (/(?:iPhone)/.test(ua)) {
+      window.addEventListener('focusin', () => {
+        // 键盘弹出事件处理
+        isShow = true
+        // alert("iphone 键盘弹出事件处理")
+      });
+      window.addEventListener('focusout', () => {
+        // 键盘收起事件处理
+        isShow = false
+        // alert("iphone 键盘收起事件处理")
+      });
+    }
+
+  </script>
+
+
+</body>
+
+</html>

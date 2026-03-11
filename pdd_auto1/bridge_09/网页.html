@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="./package/vue26.11.js"></script>
+  <script src="./package/element.js"></script>
+  <script src="./package/element.js"></script>
+  <link href="./package/element.css" type="text/css" rel="stylesheet">
+  <script src="./package/jq.js"></script>
+  <script src="./package/axios.js"></script>
+  <script src="./package/lodash.js"></script>
+  <link href="./package/vant.css" type="text/css" rel="stylesheet">
+  <script src="./package/vant.js"></script>
+
+  <script src="autox://sdk.v1.js"></script>
+
+  <!-- css样式引入 -->
+  <!-- <script src="./package/less.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="./css/html_login.css" />
+  <link rel="stylesheet" type="text/css" href="./css/html_login.css" />
+
+
+</head>
+
+<body>
+  <nav id="root">
+
+    <nav class="html_login" v-show="my_router.html_login">
+      <div>
+        <van-nav-bar title="登录" />
+      </div>
+
+      <div class="css_img_wrapper">
+        <img class="css_img1  " src="./img/login_bg.jpeg"></img>
+      </div>
+      <van-form>
+        <van-cell-group inset>
+          <div>
+            <van-field v-model="login_form.username" name="用户名" label="用户名" placeholder="用户名"
+              :rules="[{ required: true, message: '请填写用户名' }]" />
+          </div>
+          <div>
+            <van-field v-model="login_form.password" :type="is_show_password==false?'password':'text'" name="密码"
+              label="密码" placeholder="密码" :right-icon="[is_show_password ==false? 'closed-eye':'eye-o']"
+              @click-right-icon="is_show_password = !is_show_password"
+              :rules="[{ required: true, message: '请填写密码' }]" />
+          </div>
+
+        </van-cell-group>
+        <div style="margin: 16px;">
+          <van-button style="margin-bottom: 16px;" round block type="primary" native-type="submit"
+            @click="dao_login()">登录</van-button>
+          <van-button style="margin-bottom: 16px;" round block type="info" native-type="submit"
+            @click="dao_login()">注册</van-button>
+        </div>
+      </van-form>
+    </nav>
+
+
+
+    <nav class="html_sgin" v-show="my_router.html_sign">
+      <div>
+        <van-nav-bar title="注册" />
+      </div>
+      <van-form>
+        <van-cell-group inset>
+          <div>
+            <van-field v-model="sign_form.username" name="用户名" label="用户名" placeholder="用户名"
+              :rules="[{ required: true, message: '请填写用户名' }]" />
+          </div>
+          <div>
+            <van-field v-model="sign_form.password" :type="is_show_password==false?'password':'text'" name="密码"
+              label="密码" placeholder="密码" :right-icon="[is_show_password ==false? 'closed-eye':'eye-o']"
+              @click-right-icon="is_show_password = !is_show_password"
+              :rules="[{ required: true, message: '请填写密码' }]" />
+          </div>
+          <div>
+            <van-field v-model="sign_form.repassword" :type="is_show_password==false?'password':'text'" name="密码"
+              label="密码" placeholder="密码" :right-icon="[is_show_password ==false? 'closed-eye':'eye-o']"
+              @click-right-icon="is_show_password = !is_show_password"
+              :rules="[{ required: true, message: '请填写密码' }]" />
+          </div>
+
+        </van-cell-group>
+        <div style="margin: 16px;">
+          <van-button style="margin-bottom: 16px;" round block type="info" native-type="submit"
+            @click="dao_login()">提交</van-button>
+        </div>
+      </van-form>
+    </nav>
+
+
+    <nav class="html_home" v-show="my_router.html_home">
+      <div style="display: flex; flex-direction: column;">
+        <van-button style="margin: 16px;  " type="info">抖音浏览点赞</van-button>
+        <van-button style="margin: 16px;  " type="info">抖音浏览点赞</van-button>
+        <van-button style="margin: 16px;  " type="info">抖音浏览点赞</van-button>
+      </div>
+      <van-tabbar v-model="tabbar_active_name">
+        <van-tabbar-item name="home" icon="home-o">脚本</van-tabbar-item>
+        <van-tabbar-item name="search" icon="search">社区</van-tabbar-item>
+        <van-tabbar-item name="manager" icon="manager-o">我</van-tabbar-item>
+      </van-tabbar>
+    </nav>
+
+
+
+
+
+
+
+  </nav>
+</body>
+
+</html>
+
+<script>
+  window.Message = window.ELEMENT.Message;
+  window.Toast = window.vant.Toast;
+  let jq = $;
+
+
+  jq(() => {
+    let app = {
+      el: " #root ",
+      data: {
+        my_router: {
+          html_login: true,
+          html_sign: false,
+          html_home: false,
+        },
+        my_permiss: {
+          Authorization: ""
+        },
+        is_show_password: false,
+        tabbar_active_name: "home",
+        login_form: {
+          username: "admin",
+          password: "admin123",
+
+        },
+        sign_form: {
+          username: 15160315110,
+          password: 123456,
+          re_password: 123456,
+
+        }
+
+      },
+      methods: {
+        async 方法1_() {
+          console.log('1====',)
+          $autox.callHandler("test", ccc.toString(), (data) => {
+            Message.success({ message: `成功:${data}`, duration: 2 * 1000, showClose: true, })
+            this.src1 = data
+            addText("安卓回调, data:" + data);
+          })
+
+
+
+        }, //
+
+        async dao_login() {
+          let config = {
+            method: 'post', url: 'http://127.0.0.1:48080/admin-api/system/auth/login', data: '{"username":"admin","password":"admin123"}', headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Accept-Language': 'zh-CN,zh;q=0.9',
+              'Cache-Control': 'no-cache',
+              'Content-Type': 'application/json;charset=UTF-8',
+              'Pragma': 'no-cache',
+              'tenant-id': '1'
+            },
+          }
+
+          let res = await axios(config)
+          console.log(`${1}>res=======:`, res)
+
+          if (res.status == 200 && res.data && res.data.code == 0) {
+            Toast({ type: 'success', message: '登陆成功', icon: 'passed', duration: 1000 })
+            this.my_router = { html_login: false, html_sign: false, html_home: true, }
+            // 登陆需要的权限码=Authorization
+            this.my_permiss.Authorization = "Bearer " +res.data.data.accessToken
+            debugger
+            await this.dao_user_info()
+
+
+          }
+          else {
+            Toast({ type: 'error', message: '登陆失败,请检查账号密码', icon: 'passed', duration: 1000 })
+          }
+
+
+        },//
+
+
+        async dao_user_info() {
+          var config = {
+            method: 'get',
+            url: 'http://127.0.0.1:48080/admin-api/system/auth/get-permission-info',
+            headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Accept-Language': 'zh-CN,zh;q=0.9',
+              'Cache-Control': 'no-cache',
+              'Content-Type': 'application/json;charset=UTF-8',
+              'Pragma': 'no-cache',
+              'Authorization':this.my_permiss. Authorization,
+              'tenant-id': '1'
+            }
+          }
+
+
+          let res = await axios(config)
+          console.log(`${1}>res=======:`, res)
+
+
+
+          if (res.status == 200 && res.data && res.data.code == 0) {
+            // Toast({ type: 'success', message: '登陆成功', icon: 'passed', duration: 1000 })
+
+          }
+          else {
+            Toast({ type: 'error', message: '获取用户信息失败', icon: 'passed', duration: 1000 })
+          }
+        }
+
+
+
+      }, //////
+      async mounted() {
+        // jq('head').prepend(`<link rel="stylesheet" type="text/css" href="./css/html_login.css" /> `)
+      },
+    }
+
+
+    new Vue(app)
+  })
+
+
+
+
+
+
+
+
+
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/less@4"></script> -->

@@ -1,0 +1,17 @@
+https://mobile.yangkeduo.com/search_result.html?search_type=goods&search_key=张若昀&search_type=goods
+
+
+
+https://mobile.pinduoduo.com/
+
+
+
+https://mobile.yangkeduo.com/goods.html?goods_id=846608358635
+https://mobile.yangkeduo.com/goods.html?goods_id=794706784609
+
+https://mobile.yangkeduo.com/proxy/api/search?pdduid=3149778909
+
+
+
+我想爬虫这个网站的商品10条,使用python
+

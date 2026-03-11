@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>VantUI</title>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover">
+	<link rel="stylesheet" type="text/css" href="vant.min.css">
+</head>
+
+<body>
+
+	<div id="app" style="display: flex; flex-direction: column;">
+
+		<!-- 
+		<van-field key="111" v-model="form.username" name="用户名" label="用户名" placeholder="用户名"
+			:rules="[{ required: true, message: '请填写用户名' }]" />
+		<van-field key="222"  v-model="form.password" type="password" name="密码" label="密码" placeholder="密码"
+			:rules="[{ required: true, message: '请填写密码' }]" /> -->
+		<div>
+			<van-field name="用户名:" label="用户名:"  v-model="form.username" name="username" placeholder="请输入姓名" label-width="5.2em">
+	
+
+
+		</div>
+
+		<div>
+			<van-field name="用户名:" label="用户名:"  v-model="form.username" name="username" placeholder="请输入姓名" label-width="5.2em">
+		</div>
+
+
+
+
+		<van-button type="primary" size="small" @click="handleShowPicker">显示Picker</van-button>
+		<van-button type="primary" size="small" @click="handleShowSheet">显示Sheet</van-button>
+		<van-popup v-model="showPicker" position="bottom">
+			<van-picker title="标题" show-toolbar :columns="columns" @confirm="handleConfirm" @cancel="handleCancel"
+				@change="handleChange" />
+		</van-popup>
+		<van-action-sheet v-model="showSheet" :actions="actions" cancel-text="取消" close-on-click-action
+			@select="handleSelect" />
+	</div>
+
+	<script type="text/javascript" src="vue.min.js"></script>
+	<script type="text/javascript" src="vant.min.js"></script>
+	<script type="text/javascript">
+		new Vue({
+			el: '#app',
+			data: {
+				showPicker: false,
+				showSheet: false,
+				columns: ['杭州', '宁波', '温州', '绍兴', '湖州', '嘉兴', '金华', '衢州'],
+				actions: [{ name: '选项一' }, { name: '选项二' }, { name: '选项三' }],
+				form: {
+					username: 111,
+					password: 1111
+				},
+			},
+			created: function () { },
+			mounted() { },
+			methods: {
+				handleShowPicker() {
+					this.showPicker = true;
+				},
+				handleShowSheet() {
+					this.showSheet = true;
+				},
+				handleConfirm(value, index) {
+					console.log(`当前值：${value}, 当前索引：${index}`);
+					console.log(value);
+				},
+				handleCancel() {
+					console.log('选择了取消');
+					this.showPicker = false;
+				},
+				handleChange(picker, value, index) {
+					// console.log(`当前值：${value}, 当前索引：${index}`);
+				},
+				handleSelect(item) {
+					console.log(item);
+				},
+				showToast(msg) {
+					vant.Toast(msg);
+				},
+			}
+		});
+	</script>
+</body>
+
+</html>

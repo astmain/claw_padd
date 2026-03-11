@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- <html lang="en" style="font-size: 0.2rem;background: transparent;"> -->
+<html lang="en" style="background: transparent;">
+<!-- <html lang="en" style="font: 0.2rem;opacity: 0.3;"> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="autox://sdk.v1.js"></script>
+  <script class="vue" src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <link href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" type="text/css" rel="stylesheet">
+  <script class="jq" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+
+<!-- <body style="font: 0.2rem;background: rgba(0,0,0,0.1);"> -->
+<!-- <body style="font: 0.2rem;opacity: 0.3;"> -->
+
+<!-- <body style="font-size: 0.2rem;background: transparent;"> -->
+
+<body style="background: transparent;">
+  <nav id="root">
+
+    <h1>网页</h1>
+    <el-button type="primary" size="mini" @click="方法1_()">方法1_</el-button>
+    <!-- <el-input v-model="src1"></el-input> -->
+    <input v-model="src1"></input>
+  </nav>
+  <script>
+    window.Message = window.ELEMENT.Message
+    let jq = $;
+    jq(() => {
+      console.log(`${1}>name=======:`, 3)
+    })//
+    function addText(text) {
+      const div = document.createElement("div");
+      div.innerHTML = text;
+      document.body.appendChild(div);
+    }
+
+
+
+    async function aaa() {
+      return new Promise((reslove, reject) => {
+        $autox.callHandler("test", "web调用数据111", (data) => {
+          console.log(data)
+          reslove(data)
+        });
+      })
+
+    }
+
+
+
+
+
+
+
+
+    let app = {
+      el: " #root ",
+      data: {
+        src1: "111111111111",
+      },
+      methods: {
+        async 方法1_() {
+          console.log(`${1}>方法1_ =======:`, 111)
+          // alert(111)
+          this.src1 = "222222222222"
+          // $autox.callHandler("test", "web调用数据111", (data) => {
+          //   console.log(data)
+          // });
+
+          // Message.success({ message: `成功:111`, duration: 3 * 1000, showClose: true, })
+          // let res = await aaa()
+          // console.log(`${1}>res=======:`, res)
+          // this.src1 = "res"
+
+          let aaa = `( ()=> {
+            log("666")
+            log("点击-home:" + home()); sleep(2000)
+            log("点击-抖音:" + click("抖音")); sleep(1000)
+            log("点击-首页:" + click("首页")); sleep(1000)
+            log("777")
+            return "777"
+          })()`
+
+          $autox.callHandler("test", aaa.toString(), (data) => {
+            Message.success({ message: `成功:${data}`, duration: 2 * 1000, showClose: true, })
+            this.src1 = data
+            addText("安卓回调, data:" + data);
+          })
+
+
+
+        }, //
+
+
+
+      }, //////
+      async mounted() {
+
+      },
+    }
+
+
+    new Vue(app)
+
+
+    const ua = navigator.userAgent
+    let isShow = false
+    if (/(?:Android)/.test(ua)) {
+      const innerHeight = window.innerHeight;
+      window.addEventListener('resize', () => {
+        const newInnerHeight = window.innerHeight;
+        isShow = innerHeight > newInnerHeight;
+      });
+    } else if (/(?:iPhone)/.test(ua)) {
+      window.addEventListener('focusin', () => {
+        // 键盘弹出事件处理
+        isShow = true
+        // alert("iphone 键盘弹出事件处理")
+      });
+      window.addEventListener('focusout', () => {
+        // 键盘收起事件处理
+        isShow = false
+        // alert("iphone 键盘收起事件处理")
+      });
+    }
+
+  </script>
+
+
+</body>
+
+</html>

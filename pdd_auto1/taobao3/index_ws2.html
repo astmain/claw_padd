@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>websockt示例/task_taobao_publish</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>demo</title>
+  <script class="jq" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script class="vue" src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <link href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" type="text/css" rel="stylesheet" />
+  <script class="axios" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<style>h5 {
+    padding: 2px;
+    margin: 0;
+    margin-top: 10px;
+}</style>
+
+<body>
+<nav id="root">
+  <h5>WebSocket链接例子</h5>
+  <h5>当前任务状态锁:{{task_lock}}</h5>
+  <el-button type="primary" size="mini" @click="解锁任务()">解锁任务</el-button>
+
+  <el-button type="primary" size="mini" @click="清空数据()">清空数据</el-button>
+
+
+  <h5>爬虫数据</h5>
+  <el-button type="primary" size="mini" @click="发生消息_textarea_json_str()">发生消息_textarea_json_str</el-button>
+  <el-input type="textarea" v-model="textarea_json_str" :rows="5" placeholder="请输入json_str"></el-input>
+
+
+  <h5>消息显示</h5>
+  <textarea v-model="textarea_msg" style="width:98vw;height: 300px" placeholder="消息显示"></textarea>
+
+  <h5>响应结果</h5>
+  <textarea v-model="textarea_res" style="width:98vw;height: 300px" placeholder="响应结果"></textarea>
+</nav>
+<script>
+  const jq = $
+  let ws
+  const app = {
+    el: '#root',
+    data: {
+      textarea_json_str: '',
+      textarea_msg: '',
+      textarea_res: '',
+      task_lock: false
+    },
+    methods: {
+      async 解锁任务() {
+        await axios({ method: 'post', url: 'http://127.0.0.1:8888/taobao_api/task_lock_taobao', data: { lock_taobao: false } })
+      }, //
+
+
+      async 发生消息_textarea_json_str() {
+        const message = JSON.parse(this.textarea_json_str)
+        ws.emit('message', message)
+        console.log(`1发生消息---message:`, message)
+      }, //
+
+      async 清空数据() {
+        this.textarea_json_str = ''
+        this.textarea_msg = ''
+        this.textarea_res = ''
+      }, //
+
+
+      async 初始化ws() {
+        ws = io('http://127.0.0.1:8888/taobao_ws/task_taobao_publish') // Nest 默认 HTTP 端口
+        ws.on('connect', () => {
+          console.log('连接成功---ws.id:', ws.id)
+        })
+        ws.on('message', (res) => {
+          // 消息状态
+          if (res.code === 200) {
+            console.log('200-消息正常:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+          }
+          //
+          else if (res.code === 201) {
+            console.info('201-任务完美完成-放入仓库:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+          } else if (res.code === 202) {
+            console.info('202-任务草稿箱-放入草稿箱:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+          }
+
+          //
+          else if (res.code === 400) {
+            console.warn('400-消息异常:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+          }
+          //
+          else if (res.code === 404) {
+            console.error('404-任务报错:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+          }
+          // 锁住了
+          else if (res.code === 1001) {
+            console.info('1001-任务-锁住了-暂停执行-等待手动改操作:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+            this.task_lock = true
+          } else if (res.code === 1002) {
+            console.info('1001-任务-解开锁-准备继续执行:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+            this.task_lock = false
+          }
+          //
+          else {
+            console.error('000-未定义消息:', res)
+            this.textarea_msg += res.message + '\n'
+            this.textarea_res += JSON.stringify(res) + '\n'
+          }
+        })
+
+      } //
+    }, //////
+    async mounted() {
+      this.初始化ws()
+    }
+  }
+
+  new Vue(app)
+</script>
+</body>
+
+</html>

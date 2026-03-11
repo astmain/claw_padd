@@ -1,0 +1,10 @@
+{
+    "name": "dy",
+    "main": "main.js",
+    "ignore": [
+        "build"
+    ],
+    "packageName": "com.example.dy",
+    "versionName": "1.7.0",
+    "versionCode": 17
+}

@@ -1,0 +1,29 @@
+/* LESS Document */
+.html_login {
+    .css_img_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+        margin-bottom: 36px;
+
+        .css_img1 {
+
+            max-width: 100px !important;
+            max-height: 100px !important;
+            /* border-radius: 50%; */
+            overflow: hidden;
+
+
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            /* 或 background-size: contain; */
+        }
+
+
+    }
+
+
+
+}

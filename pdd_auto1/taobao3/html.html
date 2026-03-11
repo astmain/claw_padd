@@ -1,0 +1,112 @@
+<html>
+  <body style="font: size 2em">
+    <div style="font-size: 2em">html</div>
+    <!-- 导入依赖包，也可以不加，不过需要监听AutoxJsBridgeReady事件后才能使用$autox -->
+    <button onclick="btn1('点击了按钮')">btn1</button>
+    <script src="autox://sdk.v1.js"></script>
+    <script class="jq" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script class="vue" src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" type="text/css" rel="stylesheet" />
+    <script class="axios" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <style>
+      h5 {
+        padding: 2px;
+        margin: 0;
+        margin-top: 10px;
+      }
+    </style>
+
+    <script>
+      function addText(text) {
+        const div = document.createElement('div')
+        div.innerHTML = text
+        document.body.appendChild(div)
+      }
+
+      function btn1(params) {
+        //调用安卓端
+        $autox.callHandler('test', 'web调用数据11111', (data) => {
+          console.log(data)
+          addText('安卓回调, data:' + data)
+        })
+      }
+
+      document.addEventListener('AutoxJsBridgeReady', () => {
+        //$autox.
+      })
+    </script>
+
+    <nav id="root">
+      <h5>WebSocket链接例子</h5>
+      <h5>当前任务状态锁:{{task_lock}}</h5>
+      <el-button type="primary" size="mini" @click="解锁任务()">解锁任务</el-button>
+
+      <el-button type="primary" size="mini" @click="清空数据()">清空数据</el-button>
+
+      <h5>爬虫数据</h5>
+      <el-button type="primary" size="mini" @click="发生消息_textarea_json_str()">发生消息_textarea_json_str</el-button>
+      <el-input type="textarea" v-model="textarea_json_str" :rows="5" placeholder="请输入json_str"></el-input>
+
+      <h5>消息显示</h5>
+      <textarea v-model="textarea_msg" style="width: 98vw; height: 100px" placeholder="消息显示"></textarea>
+
+      <h5>响应结果</h5>
+      <textarea v-model="textarea_res" style="width: 98vw; height: 100px" placeholder="响应结果"></textarea>
+    </nav>
+    <script>
+      const jq = $
+      let ws
+      const app = {
+        el: '#root',
+        data: {
+          textarea_json_str: '',
+          textarea_msg: '',
+          textarea_res: '',
+          task_lock: false,
+        },
+        methods: {
+          async 解锁任务() {
+            await axios({ method: 'post', url: 'http://127.0.0.1:8888/taobao_api/task_lock_taobao', data: { lock_taobao: false } })
+          }, //
+
+          async 发生消息_textarea_json_str() {
+            const message = JSON.parse(this.textarea_json_str)
+            ws.emit('message', message)
+            console.log(`1发生消息---message:`, message)
+          }, //
+
+          async 清空数据() {
+            this.textarea_json_str = ''
+            this.textarea_msg = ''
+            this.textarea_res = ''
+          }, //
+
+          async 初始化ws() {
+            ws = io('http://192.168.124.5:8888/taobao_ws/task_taobao_publish') // Nest 默认 HTTP 端口
+            ws.on('connect', () => console.log('连接成功---ws.id:', ws.id))
+            ws.on('message', (res) => {
+              // 消息状态
+              if (res.code === 1000) {
+                console.log('1000-收到消息:', res)
+                this.textarea_msg += res.message + '\n'
+                this.textarea_res += JSON.stringify(res) + '\n'
+                $autox.callHandler("test", "web调用数据11111", (data) => {
+        console.log(data)
+  
+      });
+              }
+            })
+          }, //
+        }, //////
+        async mounted() {
+          this.初始化ws()
+        },
+      }
+
+      new Vue(app)
+    </script>
+  </body>
+</html>

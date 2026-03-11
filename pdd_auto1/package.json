@@ -1,0 +1,15 @@
+{
+  "name": "aaa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zzz笔记.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "vant": "^2.13.2"
+  }
+}
