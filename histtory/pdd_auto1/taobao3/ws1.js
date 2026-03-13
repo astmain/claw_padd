@@ -1,4 +1,4 @@
-require('tool.js')
+require('./tool')
 var window = floaty.window(
   <card cardCornerRadius="6" alpha="0.9">
     <vertical w="300" id="id总窗口" contentPaddingLeft="20dp">

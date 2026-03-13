@@ -1,5 +1,5 @@
 let tool = {}
-tool._ = require("lodash.js");
+tool._ = require("./lodash");
 tool.dayjs =require("./dayjs.js")
 
 

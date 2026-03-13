@@ -1,4 +1,4 @@
-let tool = require("tool.js")
+let tool = require("./tool")
 function script_dou_yin() {
     tool.store.arr_init("arr_douyin", [])
     let params = { num: 2, }

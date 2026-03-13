@@ -1,4 +1,4 @@
-let tool = require("tool.js")
+let tool = require("./tool")
 function script_dou_yin_get_fans_nickname() {
 
 

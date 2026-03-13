@@ -1,4 +1,4 @@
-let tool = require("tool.js")
+let tool = require("./tool")
 let arr = []
 
 // for (let index = 0; index < 20; index++) {

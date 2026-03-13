@@ -1,5 +1,5 @@
 "ui";
-let tool = require("tool.js")
+let tool = require("./tool")
 ui.layout(
 
     <vertical class="垂直布局">

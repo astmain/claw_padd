@@ -1,4 +1,4 @@
-let tool = require("tool.js")
+let tool = require("./tool")
 
 
 for (let index = 0; index < 5; index++) {

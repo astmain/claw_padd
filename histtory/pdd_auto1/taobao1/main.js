@@ -1,5 +1,5 @@
-let 删除图片= require("删除图片.js")
-let 下载图片= require("下载图片.js")
+let 删除图片= require("./删除图片")
+let 下载图片= require("./下载图片")
 删除图片()
 let img_list = [
   {

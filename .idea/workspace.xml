@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d126a4e0-3f99-4126-b925-dfdd3af9c073" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/生产者消费者1/aa1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/生产者消费者1/aa2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/生产者消费者2/aa1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/生产者消费者2/aa2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/生产者消费者2/aaa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/生产者消费者2/滚动获取数据.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/生产者消费者2/详情_获取数据.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/单任务/任务1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aaa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/dp_阶段5_多开测试/aa1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/dp_阶段5_多开测试/aa2 copy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/dp_阶段5_多开测试/aa2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/auto2/上传淘宝相册.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/auto2/上传淘宝相册.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_08_讲解/01_ui界面启动_按钮绑定事件.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_08_讲解/01_ui界面启动_按钮绑定事件.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_08_讲解/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_08_讲解/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_09/package/tool.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_09/package/tool.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_09/网页.html" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/bridge_09/网页.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main copy.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main copy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main_学习案例1.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main_学习案例1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main_学习案例3.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/main_学习案例3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_dian_zan.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_dian_zan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_get_fans_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_get_fans_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_get_fans_nickname.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_get_fans_nickname.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_hui_guan.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_hui_guan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_zhi_bo_jian.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/script_dou_yin_zhi_bo_jian.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/tool.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/dou_yin/tool.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/taobao1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/taobao1/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/taobao2/上传淘宝相册.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/taobao2/上传淘宝相册.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/taobao3/ws1.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/taobao3/ws1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/pdd_auto1/taobao3/上传淘宝相册.js" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/pdd_auto1/taobao3/上传淘宝相册.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/生产者消费者1/aa1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/生产者消费者1/aa2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histtory/生产者消费者2/滚动获取数据.py" beforeDir="false" afterPath="$PROJECT_DIR$/histtory/生产者消费者2/滚动获取数据.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdd_crawler.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -46,38 +69,39 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.aa1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.aa1 (2).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa1.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa2 (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa2 copy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aa2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aa3 (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa3 (2).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa3.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa4 (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aa4.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.aaaa.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.bbb1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bbb2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.滚动获取数据.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.详情_获取数据 (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.详情_获取数据.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.详情获取数据.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/AAA/claw_padd/生产者消费者2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.aa1 (1).executor": "Run",
+    "Python.aa1 (2).executor": "Debug",
+    "Python.aa1.executor": "Debug",
+    "Python.aa2 (1).executor": "Debug",
+    "Python.aa2 copy.executor": "Run",
+    "Python.aa2.executor": "Run",
+    "Python.aa3 (1).executor": "Debug",
+    "Python.aa3 (2).executor": "Debug",
+    "Python.aa3.executor": "Debug",
+    "Python.aa4 (1).executor": "Debug",
+    "Python.aa4.executor": "Debug",
+    "Python.aaaa.executor": "Debug",
+    "Python.bbb1.executor": "Run",
+    "Python.bbb2.executor": "Run",
+    "Python.任务1.executor": "Debug",
+    "Python.滚动获取数据.executor": "Debug",
+    "Python.详情_获取数据 (1).executor": "Debug",
+    "Python.详情_获取数据.executor": "Debug",
+    "Python.详情获取数据.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/AAA/claw_padd/生产者消费者2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\AAA\claw_padd\生产者消费者2" />
@@ -86,8 +110,11 @@
       <recent name="C:\AAA\claw_padd\dp_阶段5_多开测试" />
       <recent name="C:\AAA\claw_padd\dp_阶段4" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AAA\claw_padd\histtory" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.滚动获取数据">
+  <component name="RunManager" selected="Python.任务1">
     <configuration name="滚动获取数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="新建文件夹" />
       <option name="ENV_FILES" value="" />
@@ -111,6 +138,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="任务1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/单任务" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/单任务/任务1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="详情_获取数据 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="新建文件夹" />
       <option name="ENV_FILES" value="" />
@@ -126,6 +176,75 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/详情_获取数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="详情_获取数据 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/详情_获取数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="滚动获取数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/滚动获取数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="详情_获取数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\AAA\claw_padd\生产者消费者2\详情_获取数据.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,13 +322,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="aa2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/aa2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.任务1" />
         <item itemvalue="Python.滚动获取数据" />
         <item itemvalue="Python.aa2 (1)" />
         <item itemvalue="Python.详情_获取数据 (1)" />
         <item itemvalue="Python.详情_获取数据" />
-        <item itemvalue="Python.aa1" />
       </list>
     </recent_temporary>
   </component>
@@ -234,6 +376,7 @@
       <workItem from="1773105106340" duration="18864000" />
       <workItem from="1773191608265" duration="20044000" />
       <workItem from="1773277247460" duration="1800000" />
+      <workItem from="1773363926388" duration="6859000" />
     </task>
     <servers />
   </component>
@@ -244,69 +387,74 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa2.py</url>
           <line>45</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa2.py</url>
           <line>35</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa2.py</url>
           <line>29</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa2.py</url>
           <line>37</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa2.py</url>
           <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa3.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa3.py</url>
           <line>47</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段2/aa1.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段2/aa1.py</url>
           <line>53</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段2/aa1.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段2/aa1.py</url>
           <line>48</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段3/aa1.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段3/aa1.py</url>
           <line>41</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段3/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段3/aa2.py</url>
           <line>76</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dp_阶段1/aa4.py</url>
+          <url>file://$PROJECT_DIR$/histtory/dp_阶段1/aa4.py</url>
           <line>74</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/生产者消费者2/aa2.py</url>
+          <url>file://$PROJECT_DIR$/histtory/生产者消费者2/aa2.py</url>
           <line>42</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/生产者消费者2/滚动获取数据.py</url>
+          <url>file://$PROJECT_DIR$/histtory/生产者消费者2/滚动获取数据.py</url>
           <line>30</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/单任务/任务1.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -326,6 +474,7 @@
     <SUITE FILE_PATH="coverage/claw_pdd$aa4.coverage" NAME="aa4 Coverage Results" MODIFIED="1773049485434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaa" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa2__1_.coverage" NAME="aa2 (1) Coverage Results" MODIFIED="1773047485838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaa" />
     <SUITE FILE_PATH="coverage/claw_padd$aa1__1_.coverage" NAME="aa1 (1) Coverage Results" MODIFIED="1773214083076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者" />
+    <SUITE FILE_PATH="coverage/claw_padd$1.coverage" NAME="任务1 Coverage Results" MODIFIED="1773371058102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/单任务" />
     <SUITE FILE_PATH="coverage/claw_pdd$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1773130333796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段3" />
     <SUITE FILE_PATH="coverage/claw_padd$aa3__2_.coverage" NAME="aa3 (2) Coverage Results" MODIFIED="1773201450784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段5_多开测试" />
     <SUITE FILE_PATH="coverage/claw_padd$aa3__1_.coverage" NAME="aa3 (1) Coverage Results" MODIFIED="1773198913601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段4" />

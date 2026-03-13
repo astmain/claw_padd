@@ -1,5 +1,5 @@
 "ui";
-let tool = require("tool.js")
+let tool = require("./tool")
 
 var window = ui.layout(
     <vertical>

@@ -1,6 +1,6 @@
 
 "ui";
-let tool = require("tool.js");
+let tool = require("./tool");
 let my_ui = ui.layout(
 
     <vertical>
@@ -111,7 +111,7 @@ ui.子线程2_关闭.click(() => {
 
 let 测试3_变量 = "我的"
 let 测试3_线程 = null
-let dayjs = require("dayjs")
+let dayjs = require("./dayjs")
 ui.测试3_设置全局变量.click(() => {
     log(1, 测试3_变量)
     log(dayjs)

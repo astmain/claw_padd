@@ -1,5 +1,5 @@
 
-let tool = require("tool.js")
+let tool = require("./tool")
 let params = { num: 2000, }
 var window = floaty.window(
     <card cardCornerRadius="6" alpha="0.9" >
