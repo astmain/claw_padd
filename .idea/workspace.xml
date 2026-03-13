@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d126a4e0-3f99-4126-b925-dfdd3af9c073" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dp_阶段4/aa4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp_阶段5_多开测试/aa1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp_阶段5_多开测试/aa2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp_阶段5_多开测试/aa3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp_阶段1/aa4.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp_阶段1/aa4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp_阶段1/data1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp_阶段4/aa3.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp_阶段4/aa3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp_阶段4/product_details.json" beforeDir="false" afterPath="$PROJECT_DIR$/dp_阶段4/product_details.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者1/aa1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者1/aa2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者2/aa1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者2/aa2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者2/aaa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者2/滚动获取数据.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生产者消费者2/详情_获取数据.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -46,44 +46,117 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.aa1 (1).executor": "Debug",
-    "Python.aa1 (2).executor": "Debug",
-    "Python.aa1.executor": "Run",
-    "Python.aa2 (1).executor": "Debug",
-    "Python.aa2 copy.executor": "Run",
-    "Python.aa2.executor": "Debug",
-    "Python.aa3 (1).executor": "Debug",
-    "Python.aa3 (2).executor": "Debug",
-    "Python.aa3.executor": "Debug",
-    "Python.aa4 (1).executor": "Debug",
-    "Python.aa4.executor": "Debug",
-    "Python.aaaa.executor": "Debug",
-    "Python.bbb1.executor": "Run",
-    "Python.bbb2.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/AAA/claw_padd/dp_阶段5_多开测试",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.aa1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.aa1 (2).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa1.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa2 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa2 copy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aa2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aa3 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa3 (2).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa3.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa4 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aa4.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.aaaa.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.bbb1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bbb2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.滚动获取数据.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.详情_获取数据 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.详情_获取数据.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.详情获取数据.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/AAA/claw_padd/生产者消费者2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\AAA\claw_padd\dp_阶段5_多开测试" />
+      <recent name="C:\AAA\claw_padd\生产者消费者2" />
       <recent name="C:\AAA\claw_padd" />
+      <recent name="C:\AAA\claw_padd\生产者消费者" />
+      <recent name="C:\AAA\claw_padd\dp_阶段5_多开测试" />
       <recent name="C:\AAA\claw_padd\dp_阶段4" />
-      <recent name="C:\Users\admin\Desktop\claw_pdd\dp_阶段3" />
-      <recent name="C:\Users\admin\Desktop\claw_pdd" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.aa4 (1)">
+  <component name="RunManager" selected="Python.滚动获取数据">
+    <configuration name="滚动获取数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/滚动获取数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="详情_获取数据 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/详情_获取数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="详情_获取数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="新建文件夹" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\AAA\claw_padd\生产者消费者2\详情_获取数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="aa1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="新建文件夹" />
       <option name="ENV_FILES" value="" />
@@ -93,12 +166,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dp_阶段5_多开测试" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dp_阶段5_多开测试/aa1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/aa1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aa2 copy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aa2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="新建文件夹" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,81 +189,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dp_阶段5_多开测试" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/生产者消费者2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dp_阶段5_多开测试/aa2 copy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="aa3 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="新建文件夹" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dp_阶段5_多开测试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dp_阶段5_多开测试/aa3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="aa4 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="新建文件夹" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dp_阶段1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dp_阶段1/aa4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="aa4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="新建文件夹" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dp_阶段4" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dp_阶段4/aa4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/生产者消费者2/aa2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.aa4 (1)" />
-        <item itemvalue="Python.aa3 (2)" />
-        <item itemvalue="Python.aa2 copy" />
+        <item itemvalue="Python.滚动获取数据" />
+        <item itemvalue="Python.aa2 (1)" />
+        <item itemvalue="Python.详情_获取数据 (1)" />
+        <item itemvalue="Python.详情_获取数据" />
         <item itemvalue="Python.aa1" />
-        <item itemvalue="Python.aa4" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +232,8 @@
       <workItem from="1773038250481" duration="10000" />
       <workItem from="1773038723912" duration="12221000" />
       <workItem from="1773105106340" duration="18864000" />
-      <workItem from="1773191608265" duration="7863000" />
+      <workItem from="1773191608265" duration="20044000" />
+      <workItem from="1773277247460" duration="1800000" />
     </task>
     <servers />
   </component>
@@ -293,10 +298,21 @@
           <line>74</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/生产者消费者2/aa2.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/生产者消费者2/滚动获取数据.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/claw_padd$.coverage" NAME="滚动获取数据 Coverage Results" MODIFIED="1773282055776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者2" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa2.coverage" NAME="aa2 Coverage Results" MODIFIED="1773135404879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段3" />
     <SUITE FILE_PATH="coverage/claw_padd$aa2_copy.coverage" NAME="aa2 copy Coverage Results" MODIFIED="1773200529705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段5_多开测试" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa1__1_.coverage" NAME="aa1 (1) Coverage Results" MODIFIED="1773127048997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段2" />
@@ -304,15 +320,19 @@
     <SUITE FILE_PATH="coverage/claw_pdd$bbb2.coverage" NAME="bbb2 Coverage Results" MODIFIED="1773044390367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bbb" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa1__2_.coverage" NAME="aa1 (2) Coverage Results" MODIFIED="1773129522298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段3" />
     <SUITE FILE_PATH="coverage/claw_padd$aa4.coverage" NAME="aa4 Coverage Results" MODIFIED="1773199623604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段4" />
-    <SUITE FILE_PATH="coverage/claw_padd$aa1.coverage" NAME="aa1 Coverage Results" MODIFIED="1773200160796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段5_多开测试" />
-    <SUITE FILE_PATH="coverage/claw_padd$aa4__1_.coverage" NAME="aa4 (1) Coverage Results" MODIFIED="1773209992365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段1" />
+    <SUITE FILE_PATH="coverage/claw_padd$aa1.coverage" NAME="aa1 Coverage Results" MODIFIED="1773217225791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者2" />
+    <SUITE FILE_PATH="coverage/claw_padd$aa4__1_.coverage" NAME="aa4 (1) Coverage Results" MODIFIED="1773210445971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段1" />
     <SUITE FILE_PATH="coverage/claw_pdd$bbb1.coverage" NAME="bbb1 Coverage Results" MODIFIED="1773042315940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bbb" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa4.coverage" NAME="aa4 Coverage Results" MODIFIED="1773049485434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaa" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa2__1_.coverage" NAME="aa2 (1) Coverage Results" MODIFIED="1773047485838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaa" />
+    <SUITE FILE_PATH="coverage/claw_padd$aa1__1_.coverage" NAME="aa1 (1) Coverage Results" MODIFIED="1773214083076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者" />
     <SUITE FILE_PATH="coverage/claw_pdd$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1773130333796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段3" />
     <SUITE FILE_PATH="coverage/claw_padd$aa3__2_.coverage" NAME="aa3 (2) Coverage Results" MODIFIED="1773201450784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段5_多开测试" />
     <SUITE FILE_PATH="coverage/claw_padd$aa3__1_.coverage" NAME="aa3 (1) Coverage Results" MODIFIED="1773198913601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段4" />
+    <SUITE FILE_PATH="coverage/claw_padd$___1_.coverage" NAME="详情_获取数据 (1) Coverage Results" MODIFIED="1773223011024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者2" />
     <SUITE FILE_PATH="coverage/claw_pdd$aa3.coverage" NAME="aa3 Coverage Results" MODIFIED="1773137094014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp_阶段3" />
+    <SUITE FILE_PATH="coverage/claw_padd$aa2.coverage" NAME="aa2 Coverage Results" MODIFIED="1773215635787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者" />
+    <SUITE FILE_PATH="coverage/claw_padd$aa2__1_.coverage" NAME="aa2 (1) Coverage Results" MODIFIED="1773223686700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产者消费者2" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
